@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Paradise Home Care & Assisted Living | Tucson, AZ</title>
+  <meta name="description" content="Where Caring Becomes Home. Licensed Boutique Assisted Living & Group Home in Tucson, AZ directed by Roxana Flores. 24/7 Personal, Directed, and Supervisory Care.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fbf8f3',
+              100: '#f5eee3',
+              200: '#ebd9c2',
+              600: '#c28e47',
+              700: '#a36f32',
+              800: '#84542a',
+              900: '#4a2e16',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-brand-50 antialiased selection:bg-brand-200">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-900 text-amber-100 text-xs py-2.5 px-4">
+    <div class="container mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+        <span><i class="fa-solid fa-location-dot mr-1.5 text-brand-600"></i>5535 N Oracle Rd, Tucson AZ 85704</span>
+        <span class="hidden sm:inline"><i class="fa-solid fa-shield-heart mr-1.5 text-brand-600"></i>Licensed Group Home & Assisted Living</span>
+      </div>
+      <div class="flex items-center space-x-4 font-medium">
+        <a href="tel:5207537629" class="hover:text-amber-300 transition"><i class="fa-solid fa-phone mr-1"></i> (520) 753-7629</a>
+        <span class="text-brand-700">|</span>
+        <a href="mailto:mountainparadisegrouphome@gmail.com" class="hover:text-amber-300 transition hidden lg:inline"><i class="fa-solid fa-envelope mr-1"></i> mountainparadisegrouphome@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-brand-100 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center text-amber-300 font-serif font-bold text-xl shadow-inner">
+          MP
+        </div>
+        <div>
+          <span class="block font-serif font-bold text-lg md:text-xl text-brand-900 leading-tight">Mountain Paradise</span>
+          <span class="block text-[10px] tracking-widest uppercase text-brand-600 font-semibold">Home Care & Assisted Living</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-gray-700">
+        <a href="#about" class="hover:text-brand-700 transition">About Us</a>
+        <a href="#scope" class="hover:text-brand-700 transition">Scope of Services</a>
+        <a href="#rooms" class="hover:text-brand-700 transition">Residences</a>
+        <a href="#amenities" class="hover:text-brand-700 transition">Safety & Amenities</a>
+        <a href="#gallery" class="hover:text-brand-700 transition">Gallery</a>
+        <a href="#contact" class="bg-brand-700 hover:bg-brand-800 text-white px-5 py-2.5 rounded-full font-semibold shadow-md hover:shadow-lg transition">Schedule a Tour</a>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-brand-100 px-4 py-4 space-y-3">
+      <a href="#about" class="block text-gray-700 hover:text-brand-700">About Us</a>
+      <a href="#scope" class="block text-gray-700 hover:text-brand-700">Scope of Services</a>
+      <a href="#rooms" class="block text-gray-700 hover:text-brand-700">Residences</a>
+      <a href="#amenities" class="block text-gray-700 hover:text-brand-700">Safety & Amenities</a>
+      <a href="#gallery" class="block text-gray-700 hover:text-brand-700">Gallery</a>
+      <a href="#contact" class="block text-center bg-brand-700 text-white py-2.5 rounded-full font-semibold">Schedule a Tour</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[85vh] flex items-center justify-center bg-brand-900 text-white overflow-hidden">
+    <!-- Image Background -->
+    <img src="images/hero-facade.jpeg" alt="Mountain Paradise Assisted Living Tucson" class="absolute inset-0 w-full h-full object-cover opacity-35 scale-105">
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-900/50 to-transparent"></div>
+
+    <div class="container mx-auto px-4 relative z-10 text-center max-w-4xl py-20">
+      <span class="inline-block bg-brand-700/90 backdrop-blur-sm text-amber-100 text-xs md:text-sm font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 border border-amber-300/30">
+        Boutique Assisted Living & Group Home
+      </span>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-amber-50">
+        Where Caring Becomes Home.
+      </h1>
+      <p class="text-lg md:text-xl text-amber-100/90 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+        We make sure our loved ones receive the best care possible. Personalized Supervisory, Personal, and Directed Care in a safe, elegant home environment in Tucson, Arizona.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#contact" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">
+          Schedule a Private Tour <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="tel:5207537629" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-amber-100 font-semibold px-8 py-4 rounded-full border border-white/20 transition">
+          <i class="fa-solid fa-phone mr-2"></i> Call Us: (520) 753-7629
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK HIGHLIGHTS -->
+  <section class="bg-white py-10 border-b border-brand-100 relative z-20 -mt-8 mx-4 lg:mx-auto max-w-6xl rounded-2xl shadow-xl">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center px-6">
+      <div class="space-y-1 border-r border-gray-100 last:border-0">
+        <i class="fa-solid fa-user-check text-3xl text-brand-600 mb-2"></i>
+        <h4 class="font-bold text-gray-900">Personal Care</h4>
+        <p class="text-xs text-gray-500">Tailored Assistance & ADLs</p>
+      </div>
+      <div class="space-y-1 border-r border-gray-100 last:border-0">
+        <i class="fa-solid fa-heart-pulse text-3xl text-brand-600 mb-2"></i>
+        <h4 class="font-bold text-gray-900">Emotional Support</h4>
+        <p class="text-xs text-gray-500">Person-Centered Compassion</p>
+      </div>
+      <div class="space-y-1 border-r border-gray-100 last:border-0">
+        <i class="fa-solid fa-house-user text-3xl text-brand-600 mb-2"></i>
+        <h4 class="font-bold text-gray-900">Household Support</h4>
+        <p class="text-xs text-gray-500">Daily Housekeeping & Meals</p>
+      </div>
+      <div class="space-y-1">
+        <i class="fa-solid fa-users text-3xl text-brand-600 mb-2"></i>
+        <h4 class="font-bold text-gray-900">Companionship</h4>
+        <p class="text-xs text-gray-500">Daily Social & Recreational Life</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION / ROXANA FLORES LEADERSHIP -->
+  <section id="about" class="py-20 md:py-28 bg-brand-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Living Room Image (Warm Fireplace & Piano) -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="images/about-roxana-living.jpeg" alt="Warm living room with fireplace at Mountain Paradise" class="w-full h-[450px] object-cover">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brand-200 rounded-3xl -z-0 hidden sm:block"></div>
+          <div class="absolute -top-6 -left-6 w-32 h-32 bg-brand-600/10 rounded-full -z-0"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 text-brand-700 font-semibold text-sm uppercase tracking-wider">
+            <span class="w-8 h-0.5 bg-brand-600"></span>
+            <span>Executive Leadership & Dedicated Care</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+            Meet Roxana Flores & Our Commitment
+          </h2>
+          <p class="text-gray-700 leading-relaxed font-light">
+            At Mountain Paradise Group Home, we believe assisted living should feel like a true continuation of home. Managed under the direct leadership of <strong>Roxana Flores (Executive Director / Owner)</strong>, our residence provides a warm, dignified, and secure haven for senior residents in Tucson.
+          </p>
+          <p class="text-gray-700 leading-relaxed font-light">
+            We prioritize self-determination, privacy, and health-centered care, ensuring every resident receives individual attention while enjoying daily companionship and peace of mind.
+          </p>
+
+          <blockquote class="p-5 bg-white rounded-2xl border-l-4 border-brand-600 shadow-sm italic text-gray-700 text-sm space-y-2">
+            <p>"Our mission is simple: to make sure our loved ones receive the best care possible with dignity, comfort, and unconditional respect."</p>
+            <span class="block font-bold not-italic text-brand-900 text-xs uppercase tracking-wider">— Roxana Flores, Executive Director / Owner</span>
+          </blockquote>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE OF SERVICES (DETAILED & STRUCTURED FROM OFFICIAL DOCUMENTS) -->
+  <section id="scope" class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Facility Standards</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Comprehensive Scope of Services</h2>
+        <p class="text-gray-600 mt-4">Mountain Paradise Group Home provides a complete continuum of care certified under Arizona state assisted living regulations.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Care Levels -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Levels of Care</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>Supervisory Care:</strong> General supervision, daily functioning awareness, crisis intervention, and self-administration medication support.</li>
+            <li><strong>Personal Care:</strong> Hands-on assistance with ADLs (dressing, grooming, hygiene) supervised by a licensed nurse.</li>
+            <li><strong>Directed Care:</strong> Specialized programs for residents unable to recognize danger or make basic care decisions.</li>
+          </ul>
+        </div>
+
+        <!-- 2. Medical & Health Monitoring -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-capsules"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Medical & Health Care</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>Medication & Diabetic Care:</strong> Certified caregiver administration, glucose testing (FSBS), and insulin supervision per practitioner orders.</li>
+            <li><strong>Health Monitoring:</strong> Daily health tracking, medical record maintenance, and continuous health reviews by a Licensed Nurse.</li>
+            <li><strong>Therapy & Home Health:</strong> Coordination for Physical/Occupational Therapy, Wound Care, and Catheter Care via outside agencies.</li>
+          </ul>
+        </div>
+
+        <!-- 3. 24/7 Safety & Secured Community -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">24-Hour Staffing & Safety</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>24/7 Certified Staff:</strong> On-premises Certified Manager and Caregivers with 2-hour checks during night hours.</li>
+            <li><strong>Bedside Alert Systems:</strong> Bedside monitors, call bells, or alerting devices for immediate caregiver assistance.</li>
+            <li><strong>Secured Environment:</strong> Alarmed front door security to maintain safety without creating a lockdown facility.</li>
+          </ul>
+        </div>
+
+        <!-- 4. Dietary Services -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Dietary & Nutrition</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>Nutritious Meal Plans:</strong> 3 pre-planned daily meals and snacks following the Dietary Guidelines for Older Adults.</li>
+            <li><strong>Custom Food Preferences:</strong> Special modifications to diet textures and feeding assistance when needed.</li>
+            <li><strong>24/7 Snack & Coffee Station:</strong> Fresh coffee and snacks always accessible to residents and guests.</li>
+          </ul>
+        </div>
+
+        <!-- 5. Accommodations & Housekeeping -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-broom"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Housekeeping & Laundry</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>Daily Cleaning:</strong> Basic daily housekeeping for all rooms and weekly deep cleaning including outdoor patio areas.</li>
+            <li><strong>Personal Laundry:</strong> Weekly personal laundry service and bed linen changed 3x per week or as needed.</li>
+            <li><strong>Bathing & Grooming:</strong> Assistance with showering, hair care, skin lotion, nail care, and incontinence care.</li>
+          </ul>
+        </div>
+
+        <!-- 6. Activities & Well-Being -->
+        <div class="bg-brand-50 p-8 rounded-3xl border border-brand-100 hover:shadow-xl transition">
+          <div class="w-12 h-12 bg-brand-800 text-amber-300 rounded-2xl flex items-center justify-center text-xl mb-6">
+            <i class="fa-solid fa-icons"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-900 mb-3">Recreation & Hospice</h3>
+          <ul class="space-y-3 text-xs text-gray-700 leading-relaxed">
+            <li><strong>Daily Social Activities:</strong> Reading current events, games, puzzles, cognitive stimulation, and gentle exercises.</li>
+            <li><strong>Hospice Agency Services:</strong> Compassionate end-of-life care in coordination with outside hospice medical teams.</li>
+            <li><strong>Annual Testing:</strong> Facilitation of annual influenza immunizations and Tuberculosis (TB) testing.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESIDENCES & ROOMS -->
+  <section id="rooms" class="py-20 bg-brand-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Comfortable Living</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Private & Companion Suites</h2>
+        <p class="text-gray-600 mt-4">Rooms can be tailored to individual preferences with comfortable furnishings, TV, cable, and private ambiance.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        
+        <!-- Private Room -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-brand-100 hover:shadow-2xl transition">
+          <div class="relative h-72">
+            <img src="images/bedroom-private-single.jpeg" alt="Private Bedroom Suite at Mountain Paradise" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-brand-800 text-amber-100 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+              Private Suite
+            </span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-2xl font-bold text-brand-900 mb-3">Individual Private Bedroom</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Includes a comfortable bed, dresser, nightstand, TV, cable, and climate control. Designed for residents who value independence and privacy.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-700 mb-6">
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Tailored to personal preferences</li>
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Abundant natural lighting & wood floors</li>
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Easy wheelchair & walker accessibility</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Shared Room -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-brand-100 hover:shadow-2xl transition">
+          <div class="relative h-72">
+            <img src="images/bedroom-shared.jpeg" alt="Shared Companion Suite at Mountain Paradise" class="w-full h-full object-cover">
+            <span class="absolute top-4 left-4 bg-brand-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+              Companion Suite
+            </span>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-2xl font-bold text-brand-900 mb-3">Companion / Shared Room</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+              Spacious shared rooms offering continuous companionship in a warm, friendly setting. Each resident enjoys their dedicated personal area.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-700 mb-6">
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Promotes social bonding</li>
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Generous floor plan for easy movement</li>
+              <li><i class="fa-solid fa-check text-brand-600 mr-2"></i> Direct access to handicap-adapted restrooms</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESSIBILITY & SAFETY -->
+  <section id="amenities" class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+          <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Safety & Accessibility</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 leading-tight">
+            Handicap Accessible Restrooms & Roll-In Showers
+          </h2>
+          <p class="text-gray-600 leading-relaxed font-light">
+            Our home is completely barrier-free. Bathrooms feature zero-threshold roll-in showers and heavy-duty grab bars to ensure safe, comfortable bathing assistance for residents with limited mobility.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4 p-4 bg-brand-50 rounded-2xl">
+              <i class="fa-solid fa-shower text-2xl text-brand-600 mt-1"></i>
+              <div>
+                <h4 class="font-bold text-brand-900">Zero-Step Roll-In Showers</h4>
+                <p class="text-xs text-gray-600">Prevents slips and falls, enabling smooth transfers with shower chairs.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 p-4 bg-brand-50 rounded-2xl">
+              <i class="fa-solid fa-hand-holding-medical text-2xl text-brand-600 mt-1"></i>
+              <div>
+                <h4 class="font-bold text-brand-900">Safety Grab Bars & Non-Slip Surfaces</h4>
+                <p class="text-xs text-gray-600">Strategically placed near toilets and showers for resident confidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <img src="images/bathroom-accessible-1.jpg" alt="Accessible roll-in shower" class="rounded-2xl h-64 w-full object-cover shadow-md">
+          <img src="images/bathroom-accessible-2.jpeg" alt="Handicap grab bars in restroom" class="rounded-2xl h-64 w-full object-cover shadow-md">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (ALL 16 REAL PHOTOS) -->
+  <section id="gallery" class="py-20 bg-brand-50">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Photo Tour</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-900 mt-2">Explore Mountain Paradise</h2>
+        <p class="text-gray-600 mt-4">Take a virtual walk through our home, kitchen, dining areas, bedrooms, and outdoor patios.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/hero-facade.jpeg" alt="Exterior facade at sunset" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Sunset Front Facade</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/about-roxana-living.jpeg" alt="Living room with fireplace" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Fireplace Living Lounge</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/common-tv-lounge.jpeg" alt="Common TV lounge" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Great Room & Media Lounge</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/dining-formal.jpeg" alt="Formal dining room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Formal Dining Area</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/dining-vaulted.jpg" alt="Vaulted ceiling dining" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Vaulted Wood Ceiling Dining</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/kitchen-full.jpeg" alt="Full kitchen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Gourmet Open Kitchen</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/kitchen-coffee-station.jpg" alt="Coffee station" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Coffee & Beverage Bar</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/kitchen-counter.jpeg" alt="Kitchen counter" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Granite Kitchen Island</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/bedroom-private-single.jpeg" alt="Private bedroom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Private Single Suite</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/bedroom-shared.jpeg" alt="Shared bedroom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Companion Double Room</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/bathroom-accessible-1.jpg" alt="Roll-in shower bathroom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Roll-in Shower Bathroom</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/bathroom-accessible-2.jpeg" alt="Safety grab bars bathroom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Safety Grab Bars Restroom</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/patio-seating.jpeg" alt="Outdoor patio seating" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Outdoor Tea Patio</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/patio-pergola.jpeg" alt="Pergola garden" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Shaded Pergola & Garden</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/entrance-sign.jpg" alt="Entrance monument sign" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Facility Entrance Sign</div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-2xl shadow-md h-56">
+          <img src="images/living-fireplace-piano.jpg" alt="Fireplace and piano" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-brand-900/40 opacity-0 group-hover:opacity-100 transition flex items-end p-4 text-white text-xs font-semibold">Piano & Warm Fireplace</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICIAL CONTACT & VISIT SECTION -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="bg-brand-900 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 text-white">
+        
+        <!-- Contact Left info -->
+        <div class="lg:col-span-5 p-8 sm:p-12 bg-brand-800 flex flex-col justify-between space-y-8">
+          <div>
+            <span class="text-amber-300 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+            <h2 class="font-serif text-3xl font-bold mt-2 text-amber-50">Schedule a Private Tour</h2>
+            <p class="text-amber-100/80 text-sm mt-4 leading-relaxed">
+              We invite families to visit our Tucson residence, meet Roxana Flores, review our Service Plans, and tour the facility.
+            </p>
+          </div>
+
+          <!-- Real Official Data from Documents -->
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-brand-700 flex items-center justify-center text-amber-300 shrink-0 mt-1">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div>
+                <p class="text-xs text-amber-200">Executive Director / Owner</p>
+                <p class="font-semibold text-white">Roxana Flores</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-brand-700 flex items-center justify-center text-amber-300 shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="text-xs text-amber-200">Address</p>
+                <p class="font-semibold text-white">5535 N Oracle Rd<br>Tucson, AZ 85704</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-brand-700 flex items-center justify-center text-amber-300 shrink-0 mt-1">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <p class="text-xs text-amber-200">Phone & Fax</p>
+                <p class="font-semibold text-white">Cell: <a href="tel:5207537629" class="hover:text-amber-300 underline">(520) 753-7629</a></p>
+                <p class="text-xs text-amber-100/70">Fax: (520) 753-7632</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-10 h-10 rounded-full bg-brand-700 flex items-center justify-center text-amber-300 shrink-0 mt-1">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <p class="text-xs text-amber-200">Email Address</p>
+                <a href="mailto:mountainparadisegrouphome@gmail.com" class="font-semibold text-white hover:text-amber-300 transition break-all">mountainparadisegrouphome@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-brand-700/50">
+            <img src="images/entrance-sign.jpg" alt="Mountain Paradise Sign" class="rounded-xl h-28 w-full object-cover opacity-80">
+          </div>
+        </div>
+
+        <!-- Form Right -->
+        <div class="lg:col-span-7 p-8 sm:p-12">
+          <h3 class="font-serif text-2xl font-bold mb-6 text-amber-100">Send Us a Message</h3>
+          
+          <form class="space-y-5" action="mailto:mountainparadisegrouphome@gmail.com" method="post" enctype="text/plain">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs font-semibold uppercase text-amber-200 mb-2">Full Name</label>
+                <input type="text" name="name" required placeholder="e.g., Mary Smith" class="w-full bg-brand-800/60 border border-brand-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase text-amber-200 mb-2">Phone Number</label>
+                <input type="tel" name="phone" required placeholder="(520) 123-4567" class="w-full bg-brand-800/60 border border-brand-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 text-sm">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase text-amber-200 mb-2">Email Address</label>
+              <input type="email" name="email" required placeholder="email@example.com" class="w-full bg-brand-800/60 border border-brand-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 text-sm">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold uppercase text-amber-200 mb-2">How can we assist your family?</label>
+              <textarea name="message" rows="4" placeholder="Tell us about your loved one's care requirements or preferred tour dates..." class="w-full bg-brand-800/60 border border-brand-700 rounded-xl px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-brand-100 border-t border-brand-800 py-12">
+    <div class="container mx-auto px-4 max-w-6xl text-center md:text-left">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="space-y-3">
+          <span class="font-serif font-bold text-xl text-amber-100 block">Mountain Paradise</span>
+          <p class="text-xs text-amber-200/70 leading-relaxed">
+            Where Caring Becomes Home. Boutique assisted living and group home care in Tucson, Arizona.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase text-amber-300 mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-white transition">About Roxana Flores</a></li>
+            <li><a href="#scope" class="hover:text-white transition">Scope of Services</a></li>
+            <li><a href="#rooms" class="hover:text-white transition">Residences & Suites</a></li>
+            <li><a href="#gallery" class="hover:text-white transition">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase text-amber-300 mb-3">Facility Licensing</h4>
+          <ul class="space-y-2 text-xs text-amber-200/80">
+            <li>Supervisory Care Certified</li>
+            <li>Personal Care Certified</li>
+            <li>Directed Care Certified</li>
+            <li>Handicap Accessible Facility</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase text-amber-300 mb-3">Contact</h4>
+          <p class="text-xs text-amber-200/80 leading-relaxed">
+            5535 N Oracle Rd<br>
+            Tucson, AZ 85704<br>
+            Ph: (520) 753-7629
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-brand-800 text-center text-xs text-amber-200/50 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>&copy; 2026 Mountain Paradise Home Care & Assisted Living. All rights reserved.</p>
+        <p>Tucson, Arizona</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
